@@ -35,4 +35,4 @@ def main() :
     #mvnBuild()
     jfrogUpload()
 
-
+if __name__ == "__main__":
