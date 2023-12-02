@@ -73,14 +73,7 @@ pipeline{
                }
             }
         }
-        stage ('Pushing Jar to Jfrog : python'){
-          when { expression {  params.action == 'create' } }
-          steps{
-            script{
-                sh 'curl -X PUT -u admin:password -T  /var/lib/jenkins/workspace/java-3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar "http://44.203.86.95:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"'
-                }
-            }
-        }
+
         stage('Docker Image Build'){
          when { expression {  params.action == 'create' } }
             steps{
