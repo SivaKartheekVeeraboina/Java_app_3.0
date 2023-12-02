@@ -3,7 +3,7 @@ import requests
 
 def jfrogUpload():
     url = "http://54.144.129.71:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
-    file_path = "/var/lib/jenkins/workspace/Demo_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
+    file_path = '/var/lib/jenkins/workspace/java-3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
     username = 'admin'
     password = 'Admin@123'
 
