@@ -3,7 +3,7 @@ import requests
 
 def jfrogUpload():
     url = "http://54.144.129.71:8082/artifactory/example-repo-local/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar"
-    file_path = '/var/lib/jenkins/workspace/java-3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
+    file_path = '/home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar'
     username = 'admin'
     password = 'Admin@123'
 
@@ -12,7 +12,7 @@ def jfrogUpload():
     if response.status_code == 201:
         print("\nPUT request was successful!")
     else:
-        print(f"PUT reuquest failed with status code(response.status_code)")
+        print(f"PUT request failed with status code(response.status_code)")
         print("Response content:")
         print(response.text)
 
