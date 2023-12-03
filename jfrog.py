@@ -22,7 +22,7 @@ def jfrogUpload() :
         print(response.text)
 def mvnBuild() :
     #define the Maven Command
-    maven_command = "mvn clean install -DskipTests"
+    maven_command = "mvn clena install -DskipTests"
 
     #Run the maven command as a subprocess
     try:
@@ -34,6 +34,6 @@ def mvnBuild() :
 def main() :
     #mvnBuild()
     jfrogUpload()
-    
+
 if __name__ == "__main__":
     main()
